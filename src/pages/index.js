@@ -82,9 +82,9 @@ const IndexPage = () => (
               <LinkLight
                 style={{ marginLeft: "8px" }}
                 fontSize={[0, 1, 2]}
-                href="https://stackoverflow.com/users/id"
+                href="https://github.com/thomaswangio/gatsby-starter-primer"
               >
-                Stack Overflow
+                Contribute
               </LinkLight>{" "}
             </Text>
           </Flex.Item>
