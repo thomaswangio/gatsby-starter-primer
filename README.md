@@ -8,9 +8,11 @@
   Gatsby Primer Starter
 </h1>
 
-Want a space to showcase your open source projects? Use this Gatsby starter, made with Github's Design System, [Primer](https://github.com/primer).
+Want a space to showcase your open source projects? Use this Gatsby starter, made with Github's Design System, **[Primer](https://github.com/primer)**.
 
 ![screenshot](./static/share.jpg)
+
+## 🚀 Quick start
 
 1.  **Create a Gatsby site.**
 
@@ -38,6 +40,16 @@ Want a space to showcase your open source projects? Use this Gatsby starter, mad
 
     Open the `my-default-starter` directory in your code editor of choice and edit `src/pages/index.js`. Save your changes and the browser will update in real time!
 
+## 🔔 Important files
+
+Remember to edit these files to customize the basic template:
+
+- **`gatsby-config.js`**: This is the main configuration file for a Gatsby site. This is where you can specify information about your site (metadata) like the site title and description, which Gatsby plugins you’d like to include, etc. (Check out the [config docs](https://www.gatsbyjs.org/docs/gatsby-config/) for more detail).
+
+- **`src/components/nav.js`**: This is your header component. Edit the name and website link!
+
+- **`src/pages/index.js`**: This is your index page that loads at `/`. Customize it to make it your own.
+
 ## 🎓 Learning Gatsby
 
 Looking for more guidance? Full documentation for Gatsby lives [on the website](https://www.gatsbyjs.org/). Here are some places to start:
@@ -45,6 +57,12 @@ Looking for more guidance? Full documentation for Gatsby lives [on the website](
 - **For most developers, we recommend starting with our [in-depth tutorial for creating a site with Gatsby](https://www.gatsbyjs.org/tutorial/).** It starts with zero assumptions about your level of ability and walks through every step of the process.
 
 - **To dive straight into code samples, head [to our documentation](https://www.gatsbyjs.org/docs/).** In particular, check out the _Guides_, _API Reference_, and _Advanced Tutorials_ sections in the sidebar.
+
+## ⬛️ Using Primer
+
+The design of the page is based on the [Primer website](https://github.com/primer/primer.style) and uses [Primer React component library](https://primer.style/components). Primer is open-source and and maintained by GitHub’s [Design Systems team](https://primer.style/team).
+
+Take a look at their [documentation](https://styleguide.github.com/primer/) and see what you can make!
 
 ## 💫 Deploy
 
