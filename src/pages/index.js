@@ -24,7 +24,7 @@ TwitterIcon.size = [20, 20]
 const IndexPage = () => (
   <Layout>
     <SEO
-      title="Mona Lisa Octocat"
+      title="Gatsby Primer Starter"
       image="https://gatsby-starter-primer.netlify.com/share.jpg"
     />
     <Hero pt={[4, 2, 5]}>
