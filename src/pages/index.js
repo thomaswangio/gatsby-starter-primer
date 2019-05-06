@@ -23,7 +23,10 @@ TwitterIcon.size = [20, 20]
 
 const IndexPage = () => (
   <Layout>
-    <SEO title="twang.dev" image="https://twang.dev/share.jpg" />
+    <SEO
+      title="Mona Lisa Octocat"
+      image="https://gatsby-starter-primer.netlify.com/share.jpg"
+    />
     <Hero pt={[4, 2, 5]}>
       <Grid
         my={[6, 6, 12]}
