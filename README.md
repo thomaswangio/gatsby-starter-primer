@@ -58,7 +58,7 @@ Looking for more guidance? Full documentation for Gatsby lives [on the website](
 
 - **To dive straight into code samples, head [to our documentation](https://www.gatsbyjs.org/docs/).** In particular, check out the _Guides_, _API Reference_, and _Advanced Tutorials_ sections in the sidebar.
 
-## ⬛️ Using Primer
+## 🔷 Using Primer
 
 The design of the page is based on the [Primer website](https://github.com/primer/primer.style) and uses [Primer React component library](https://primer.style/components). Primer is open-source and and maintained by GitHub’s [Design Systems team](https://primer.style/team).
 
