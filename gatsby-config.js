@@ -1,8 +1,10 @@
 module.exports = {
   siteMetadata: {
-    title: `twang.dev`,
-    description: `Github Projects from Thomas Wang, software developer from San Diego 🌴.`,
-    author: `@thomaswangio`,
+    title: `gatsby-starter-primer`,
+    description: `Open Source Projects from Mona Lisa Octocat, the Github Mascot`,
+    author: `@monatheoctocat`,
+    keywords: `github, open-source, projects`,
+    url: `https://gatsby-starter-primer.netlify.com/`,
   },
   plugins: [
     `gatsby-plugin-styled-components`,

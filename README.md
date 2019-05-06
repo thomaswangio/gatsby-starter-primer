@@ -1,3 +1,3 @@
 # twang.dev
 
-Made with Gatsby and Prisma Style Guide / Components!
+Made with Gatsby and Primer Style Guide / Components!

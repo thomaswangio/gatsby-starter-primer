@@ -8,7 +8,6 @@
 import React from "react"
 import PropTypes from "prop-types"
 import { StaticQuery, graphql } from "gatsby"
-import MessengerCustomerChat from "react-messenger-customer-chat"
 
 import "./layout.css"
 import Nav from "../components/nav"
@@ -28,13 +27,6 @@ const Layout = ({ children }) => (
       <>
         <Nav />
         <main>{children}</main>
-        <MessengerCustomerChat
-          pageId="2130846410546360"
-          themecolor="#000000"
-          appId="401910847061249"
-          loggedInGreeting="Hey internet visitor! Feel free ask me anything."
-          loggedOutGreeting="Hey internet visitor! Feel free ask me anything."
-        />
       </>
     )}
   />

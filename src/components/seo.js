@@ -10,7 +10,7 @@ import PropTypes from "prop-types"
 import Helmet from "react-helmet"
 import { useStaticQuery, graphql } from "gatsby"
 
-function SEO({ description, lang, meta, keywords, title }) {
+function SEO({ lang, meta, title, description, author, keywords, url, image }) {
   const { site } = useStaticQuery(
     graphql`
       query {
@@ -19,21 +19,33 @@ function SEO({ description, lang, meta, keywords, title }) {
             title
             description
             author
+            keywords
+            url
           }
         }
       }
     `
   )
 
+  const metaTitle = title || site.siteMetadata.title
   const metaDescription = description || site.siteMetadata.description
+  const metaAuthor = author || site.siteMetadata.author
+  const metaKeywords = keywords || site.siteMetadata.keywords
+  const metaUrl = url || site.siteMetadata.url
+
+  // Getting gatsby-share.png from public folder as fallback for metaImage
+  const gatsbyShareImage =
+    typeof window !== `undefined` && `${window.location.origin}/share.jpg`
+
+  const metaImage = image || gatsbyShareImage
 
   return (
     <Helmet
       htmlAttributes={{
         lang,
       }}
-      title={title}
-      titleTemplate={site.siteMetadata.title}
+      title={metaTitle}
+      titleTemplate={`${site.siteMetadata.title}`}
       meta={[
         {
           name: `description`,
@@ -41,7 +53,7 @@ function SEO({ description, lang, meta, keywords, title }) {
         },
         {
           property: `og:title`,
-          content: title,
+          content: metaTitle,
         },
         {
           property: `og:description`,
@@ -52,16 +64,25 @@ function SEO({ description, lang, meta, keywords, title }) {
           content: `website`,
         },
         {
+          property: `og:image`,
+          id: "ogimage",
+          content: metaImage,
+        },
+        {
+          property: `og:url`,
+          content: metaUrl,
+        },
+        {
           name: `twitter:card`,
-          content: `summary`,
+          content: `summary_large_image`,
         },
         {
           name: `twitter:creator`,
-          content: site.siteMetadata.author,
+          content: metaAuthor,
         },
         {
           name: `twitter:title`,
-          content: title,
+          content: metaTitle,
         },
         {
           name: `twitter:description`,
@@ -69,10 +90,10 @@ function SEO({ description, lang, meta, keywords, title }) {
         },
       ]
         .concat(
-          keywords.length > 0
+          metaKeywords.length > 0
             ? {
                 name: `keywords`,
-                content: keywords.join(`, `),
+                content: metaKeywords.join(`, `),
               }
             : []
         )
@@ -85,15 +106,17 @@ SEO.defaultProps = {
   lang: `en`,
   meta: [],
   keywords: [],
-  description: ``,
 }
 
 SEO.propTypes = {
-  description: PropTypes.string,
   lang: PropTypes.string,
-  meta: PropTypes.arrayOf(PropTypes.object),
-  keywords: PropTypes.arrayOf(PropTypes.string),
+  meta: PropTypes.array,
   title: PropTypes.string.isRequired,
+  description: PropTypes.string,
+  author: PropTypes.string,
+  keywords: PropTypes.arrayOf(PropTypes.string),
+  url: PropTypes.string,
+  image: PropTypes.string,
 }
 
 export default SEO

@@ -1,9 +1,9 @@
 {
-  "name": "gatsby-starter-default",
+  "name": "gatsby-starter-primer",
   "private": true,
-  "description": "A simple starter to get up and developing quickly with Gatsby",
+  "description": "A Gatsby starter featuring GitHub Primer Design System and React components",
   "version": "0.1.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "author": "Thomas Wang <thomas@wang.sh>",
   "dependencies": {
     "@githubprimer/octicons-react": "^8.5.0",
     "@primer/components": "^12.0.2",
@@ -21,7 +21,6 @@
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
     "react-helmet": "^5.2.0",
-    "react-messenger-customer-chat": "^0.7.2",
     "styled-components": "^4.2.0"
   },
   "devDependencies": {

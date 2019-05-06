@@ -10,7 +10,7 @@ export default function Nav() {
         <Flex flex="auto">
           <a
             style={{ color: "inherit" }}
-            href="https://github.com/thomaswangio"
+            href="https://github.com/monatheoctocat"
           >
             <Flex color="blue.2" alignItems="center">
               <Octicon
@@ -24,20 +24,20 @@ export default function Nav() {
                 fontWeight="bold"
                 lineHeight="condensed"
               >
-                Thomas Wang
+                Mona Lisa
               </NoWrapText>
             </Flex>
           </a>
         </Flex>
         <Flex color="blue.2" alignItems="center">
-          <a href="https://github.com/thomaswangio?tab=repositories">
+          <a href="https://myoctocat.com">
             <NoWrapText
               mx={3}
               fontSize="2"
               fontWeight="bold"
               lineHeight="condensed"
             >
-              What's new?
+              Mona's site
             </NoWrapText>
           </a>
         </Flex>
