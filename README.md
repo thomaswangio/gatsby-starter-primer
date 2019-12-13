@@ -20,7 +20,7 @@ Want a space to showcase your open source projects? Use this Gatsby starter, mad
 
     ```sh
     # create a new Gatsby site using the default starter
-    gatsby new my-primer-starter https://github.com/thomaswangio/gatsby-starter-primer
+    gatsby new my-primer-starter https://github.com/thomaswang/gatsby-starter-primer
     ```
 
 1.  **Start developing.**
