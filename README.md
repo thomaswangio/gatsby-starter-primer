@@ -8,6 +8,8 @@
   Gatsby Primer Starter
 </h1>
 
+⚠️ The props used in this starter are outdated. There may be breaking CSS changes. Please refer to [primer.style/components](https://primer.style/components) for the latest conventions.
+
 Want a space to showcase your open source projects? Use this Gatsby starter, made with Github's Design System, **[Primer](https://github.com/primer)**.
 
 ![screenshot](./static/share.jpg)
